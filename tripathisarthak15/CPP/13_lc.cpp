@@ -8,11 +8,11 @@ public:
     int romanToInt(string s)
     {
         int sum=0;
-        char p='0';
-        for(auto i=s.begin(); i!=s.end(); i++) {
+        char p=0;
+        for(auto i=s.begin(); i!=s.end(); ++i) {
             switch(*i) {
             case 'I':
-                sum=sum+1;
+                ++sum;
                 break;
             case 'V':
                 sum=sum+5;
@@ -23,6 +23,7 @@ public:
                 sum=sum+10;
                 if(p=='I')
                     sum=sum-2;
+                    break;
 
             case 'L':
                 sum=sum+50;
@@ -46,6 +47,8 @@ public:
         return sum;
     }
 };
+
+
 
 int main()
 {

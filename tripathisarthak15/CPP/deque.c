@@ -169,7 +169,7 @@ void op_restricted()
 
 int main()
 {   int choice;
-    printf("--Types of Double Ended Queue--\n1. Input Restricted\n2. Output Restricted\n\nEnter Choice: "); scanf("%d",&choice);
+    printf("\n--Types of Double Ended Queue--\n1. Input Restricted\n2. Output Restricted\n\nEnter Choice: "); scanf("%d",&choice);
 
     switch(choice)
     {

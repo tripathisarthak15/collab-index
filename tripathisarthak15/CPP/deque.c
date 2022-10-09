@@ -8,7 +8,10 @@ void rear_insert()
 {
     int el; 
     if(front == 0 && rear == size-1)
-    printf("Overflow!\n");
+    {
+        printf("Overflow!\n");
+        return;
+    }
 
     else if(front ==-1)
     {
@@ -30,7 +33,10 @@ void front_insert()
 {
     int el;
     if(front == 0 && rear == size-1)
-    printf("Overflow!\n");
+    {
+        printf("Overflow!\n");
+        return;
+    }
 
     else if(front == -1)
     {

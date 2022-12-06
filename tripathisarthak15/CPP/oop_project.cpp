@@ -2,7 +2,7 @@
 #include<fstream>  
 #include <stdlib.h>  
 using namespace std;  
-class head  
+class main_class  
 {  
     char Iname[40][40];  
   
@@ -15,7 +15,7 @@ public:
     void input();  
     void output();  
 };  
-class taxgst:public head  //Inheritence (Public Derivation)
+class taxgst:public main_class  //Inheritence (Public Derivation)
 {  
     float tgst;  
 public:  
@@ -24,7 +24,7 @@ public:
     void sum();  
 };  
   
-void head::input()  
+void main_class::input()  
 {  
     system("CLS");  
     cout<<"\nEnter number of items= ";  
@@ -42,7 +42,7 @@ void head::input()
     }  
 }  
 
-void head::output()  
+void main_class::output()  
 {  
     int a;  
   
